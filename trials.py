@@ -19,11 +19,11 @@ def get_all_evens(nums):
 def get_odd_indices(items):
     result = []
 
-        for i in range(len(items)):
-            if i % 2 != 0:
-                result.append(items[i])
-    
-    return result
+    for i in range(len(items)):
+        if i % 2 != 0:
+            result.append(items[i])
+        
+        return result
 
 
 def print_as_numbered_list(items):
@@ -114,8 +114,8 @@ def compress(string):
             if char_count > 1:
                 compressed.append(string(char_count))
 
-            curr_char = char:
-            char_count = 0:
+            curr_char = char
+            char_count = 0
 
         char_count += 1
 
